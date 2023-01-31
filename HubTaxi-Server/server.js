@@ -6,7 +6,6 @@
 
 (function () {
     var CrudApi, MongooseCrud, MongooseDbProvider, Params, User, Utils, app, appApi, crossOriginAllower, express, fs, http, passport, path, server, serverConfig, sessionStore, socketCore, uuid, _ref;
-    console.log("asd")
     fs = require('fs');
 
     async = require('async');
