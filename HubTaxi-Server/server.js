@@ -18,7 +18,7 @@
 
     path = require('path');
 
-    http = require('http');
+    http = require('https');
 
     var os = require('os');
 
@@ -145,7 +145,10 @@
 
     app = express();
 
-    server = http.createServer(app);
+ server = http.createServer({
+        key: fs.readFileSync("/etc/ssl/private/conexion.key"),
+        cert: fs.readFileSync("/etc/ssl/certs/conexion.crt")
+},app);
 
 console.log("as5d")
     /*
